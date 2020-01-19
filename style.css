@@ -25,7 +25,7 @@ body{
     margin-bottom: 15px;
 }
 
-.recruit-btn{   /*「RECRUIT」ボタンをデザイン*/
+.recruit-btn{   /*「RECRUIT」ボタンをデザイン*//*質問関連部分です*/
     background-color: #FFE000;
     width: 151px;
     padding: 15px 35px;
@@ -78,13 +78,13 @@ body{
     height: 50%;
 }
 
-.contact-btn,.document-request-btn{
+.contact-btn,.document-request-btn{     /*質問関連部分です*/
     float: left;
 }
 
-.contact-btn{
+.contact-btn{   /*質問関連部分です*/
     background-color: #109954;
-    width:166px;
+    width: 166px;
     padding: 15px 39px;
     margin-right: 10px;
     display: block;
@@ -99,9 +99,9 @@ body{
     margin-bottom: 15px;
 }
 
-.document-request-btn{
+.document-request-btn{  /*質問関連部分です*/
     background-color: #FFFFFF;
-    width:223px;
+    width: 223px;
     padding: 15px 35px;
     display: block;
     border-radius: 32px;
@@ -256,7 +256,7 @@ body{
     margin-top: 20px;
 }
 
-.more-btn{
+.more-btn{  /*質問関連部分です*/
     background-color: #109954;
     width: 166px;
     text-align: center;
@@ -346,7 +346,7 @@ body{
     text-align: center;
 }
 
-.news-more-btn{
+.news-more-btn{     /*質問関連部分です*/
     margin: 0 auto;
     margin-top: 50px;
     text-align: center;
