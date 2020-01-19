@@ -36,6 +36,7 @@ body{
     color: #333333;
     line-height: 1.7;
     box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
+    text-align: center;
 }
 /*「ヘッダー」部分ここまで*/
 
@@ -77,13 +78,13 @@ body{
     height: 50%;
 }
 
-.mv-link{
-    display: flex;
-    padding-top: 40px;
+.contact-btn,.document-request-btn{
+    float: left;
 }
 
 .contact-btn{
     background-color: #109954;
+    width: 166px;
     padding: 15px 39px;
     margin-right: 10px;
     display: block;
@@ -93,10 +94,14 @@ body{
     color: #FFFFFF;
     line-height: 1.7;
     box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 15px;
 }
 
 .document-request-btn{
     background-color: #FFFFFF;
+    width: 223px;
     padding: 15px 35px;
     display: block;
     border-radius: 32px;
@@ -106,6 +111,7 @@ body{
     line-height: 1.7;
     border: 2px #109954 solid;
     box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
+    text-align: center;
 }
 
 /*ここから「SERVICE」部分*/
@@ -167,12 +173,12 @@ body{
 }
 
 .service-content img{
-    width: 200px;
-    height: 200px;
     max-width: 100%;
     max-height: 100%;
 }
+/*「SERVICE」部分ここまで*/
 
+/*ここから「ABOUT」部分*/
 .about-inner{
     max-width: 1080px;
     margin-left: auto;
@@ -195,15 +201,11 @@ body{
 
 .about-contents .about-content {
     display: flex;
-    margin: 0 0 24px;
+    justify-content:space-between;
 }
 
 .about-contents .about-content:nth-child(odd) {
     flex-direction: row-reverse;
-}
-
-.about-contents .about-content-img {
-    padding: 0 12px;
 }
 
 .about-content-img img{
@@ -215,13 +217,17 @@ body{
     padding-top: 100px;
 }
 
+.about-content{
+    padding-bottom: 100px;
+}
+
 .about-content-body-01{
     color: #333333;
     font-size: 16px;
     line-height: 1.7;
     padding-right: 40px;
-    padding-bottom: 29px;
     margin-top: 20px;
+    width: 490px;
 }
 
 .about-content-body-01 p{
@@ -230,8 +236,9 @@ body{
 
 .about-content-body-02{
     line-height: 1.7;
-    padding-left: 40px;
+    margin-left: 40px;
     margin-top: 20px;
+    width: 490px;
 }
 
 .about-content-body-02-title{
@@ -246,7 +253,6 @@ body{
     font-size: 16px;
     line-height: 1.7;
     padding-right: 40px;
-    padding-bottom: 29px;
     margin-top: 20px;
 }
 
@@ -263,13 +269,15 @@ body{
     line-height: 1.7;
     box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
 }
+/*「NEWS」部分ここまで*/
+
 
 /*ここから「NEWS」部分*/
 .news-inner{
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px 20px;
+    padding: 50px 20px 50px 20px;
 }
 
 .news{
@@ -293,6 +301,7 @@ body{
 .news-box-01 img,.news-box-02 img,.news-box-03 img{
     width: 300px;
     height: 168px;
+    margin-right: 34px;
 }
 
 .time-category{
@@ -340,6 +349,7 @@ body{
 .news-more-btn{
     margin: 0 auto;
     margin-top: 50px;
+    text-align: center;
 }
 /*「NEWS」部分ここまで*/
 
