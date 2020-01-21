@@ -4,10 +4,8 @@
 }
 
 body{
-    font-family: "游ゴシック体";
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
 }
-
-
 
 /*ここから「ヘッダー」部分*/
 .header-inner{  /*innerを定義、要素を左右に配置*/
