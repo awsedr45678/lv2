@@ -567,7 +567,7 @@ body{
         margin-right: 0px;
     }
     .time-category p{   /*absoluteの位置を定義*/
-        left: 120px;
+        left: 130px;
     }
     .news-box-01,.news-box-02,.news-box-03{     /*余白を調整*/
         padding-top: 18px;
@@ -686,8 +686,3 @@ body{
     }
 }
 /*PC用ここまで*/
-
-
-
-
-
