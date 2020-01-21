@@ -7,41 +7,43 @@ body{
     font-family: "游ゴシック体";
 }
 
+
+
 /*ここから「ヘッダー」部分*/
-.header-inner{  /*幅と余白を指定*/
+.header-inner{  /*innerを定義、要素を左右に配置*/
     padding: 40px 20px;
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    align-items: stretch;
     justify-content:space-between;
 }
 
 .header-logo img{   /*「RECRUIT」ボタンとロゴが水平になるように、marginで調整*/
     width:130px;
     height: 33px;
-    margin-top: 15px;
+    margin-top: 7px;
     margin-bottom: 15px;
 }
 
-.recruit-btn{   /*「RECRUIT」ボタンをデザイン*//*質問関連部分です*/
+.recruit-btn{   /*「RECRUIT」ボタンをデザイン*/
     background-color: #FFE000;
     width: 151px;
-    padding: 15px 35px;
+    padding: 10px 35px;
     display: block;
     border-radius: 25px;
     font-size: 18px;
     font-weight: bold;
     color: #333333;
-    line-height: 1.7;
     box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
     text-align: center;
 }
 /*「ヘッダー」部分ここまで*/
 
+
+
 /*ここから「イメージビジュアル」部分*/
-.mv-inner{
+.mv-inner{      /*innerを定義*/
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
@@ -50,15 +52,11 @@ body{
 
 .mv-wrapper{
     display: flex;
-    justify-content:space-between;
+    align-items: center;    /*flexコンテナ内の要素を上下の中心に配置*/
+    justify-content: space-between; /*要素を左右にバランスよく配置*/
 }
 
-.mv-left{
-    width: 50%;
-    margin-top: 100px;
-}
-
-.mv-txt-01{
+.mv-txt-01{     /*フォントサイズ等を定義*/
     font-size: 36px;
     font-weight: bold;
     line-height: 1.7;
@@ -66,27 +64,29 @@ body{
     padding-bottom: 34px;
 }
 
-.mv-txt-02{
+.mv-txt-02{     /*フォントサイズ等を定義*/
     font-size: 16px;
     font-weight: normal;
     line-height: 1.7;
     color: #333333;
 }
 
-.mv-img{
-    width:50%;
-    height: 50%;
+.mv-right{     /*バランスのため、画像の最大幅を定義*/
+    max-width: 520px;
 }
 
-.contact-btn,.document-request-btn{     /*質問関連部分です*/
+.mv-right img{     /*バランスのため、画像の最大幅を定義*/
+    width: 100%;
+}
+
+.contact-btn,.document-request-btn{     /*ボタンを横並びにする*/
     float: left;
 }
 
-.contact-btn{   /*質問関連部分です*/
+.contact-btn{     /*ボタンを作成*/
     background-color: #109954;
     width: 166px;
-    padding: 15px 39px;
-    margin-right: 10px;
+    padding: 9px 39px;  /*line-heightの分、paddingを調整*/
     display: block;
     border-radius: 32px;
     font-size: 18px;
@@ -99,10 +99,9 @@ body{
     margin-bottom: 15px;
 }
 
-.document-request-btn{  /*質問関連部分です*/
+.document-request-btn{      /*ボタンを作成*/
     background-color: #FFFFFF;
-    width: 223px;
-    padding: 15px 35px;
+    padding: 7px 39px;  /*line-heightの分、paddingを調整*/
     display: block;
     border-radius: 32px;
     font-size: 18px;
@@ -113,21 +112,24 @@ body{
     box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
     text-align: center;
 }
+/*「イメージビジュアル」部分ここまで*/
+
+
 
 /*ここから「SERVICE」部分*/
-.service-inner{
+.service-inner{      /*innerを定義*/
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     padding: 70px 20px;
 }
 
-.service{
+.service{      /*h2テキストとボーダーを並べる*/
     display: flex;
     justify-content: center;
 }
 
-.service-ttl{
+.service-ttl{      /*フォントサイズなどを指定*/
     font-size: 36px;
     margin-left: 50px;
     margin-right: 50px;
@@ -135,36 +137,31 @@ body{
     color: #333333;
 }
 
-.border-01{
+.border-01{      /*ボーダーを作成*/
     height: 4px;
     width: 200px;
     background-color: #109954;
     margin-top: 27px;
 }
 
-.border-02{
+.border-02{      /*ボーダーを作成*/
     height: 4px;
     width: 200px;
     background-color: #109954;
     margin-top: 27px;
 }
 
-.service-contents{
+.service-contents{      /*3つの画像を横並びにして、要素を左右に配置*/
     padding-top: 109px;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
 }
 
-.service-content:nth-child(even){
-    margin-right: 100px;
-    margin-left: 100px;
-}
-
-.service-content{
+.service-content{   /*要素を真ん中に配置する*/
     text-align: center;
 }
 
-.service-content p{
+.service-content p{ /*フォントサイズなどを指定*/
     font-weight: bold;
     color: #333333;
     line-height: 1.7;
@@ -172,26 +169,32 @@ body{
     font-size: 20px;
 }
 
-.service-content img{
-    max-width: 100%;
-    max-height: 100%;
+.service-content {      /*コンテンツの幅を指定*/
+    width:30%;
+}
+
+.service-content img{   /*画像サイズを指定*/
+    max-width:100%;
+    width: 200px;
 }
 /*「SERVICE」部分ここまで*/
 
+
+
 /*ここから「ABOUT」部分*/
-.about-inner{
+.about-inner{   /*innerを定義*/
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     padding: 50px 20px;
 }
 
-.about{
+.about{      /*h2テキストとボーダーを並べる*/
     display: flex;
     justify-content: center;
 }
 
-.about-ttl{
+.about-ttl{      /*フォントサイズなどを指定*/
     font-size: 36px;
     margin-left: 50px;
     margin-right: 50px;
@@ -199,29 +202,28 @@ body{
     color: #333333;
 }
 
-.about-contents .about-content {
-    display: flex;
-    justify-content:space-between;
+.about-contents .about-content {    
+    display: flex;  /*横並びにして*/
+    justify-content:space-between;  /*要素を左右に配置*/
 }
 
-.about-contents .about-content:nth-child(odd) {
-    flex-direction: row-reverse;
+.about-content-img img{     /*画像サイズを定義*/
+    width:450px;
+    height: 278px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 11px 20px 0 rgba(0, 0, 0, 0.16);
 }
 
-.about-content-img img{
-      width:450px;
-      height: 278px;
-}
-
-.about-contents{
+.about-contents{     /*余白を定義*/
     padding-top: 100px;
 }
 
-.about-content{
+.about-content{ /*余白を定義*/
     padding-bottom: 100px;
 }
 
-.about-content-body-01{
+.about-content-body-01{ /*テキスト部分のフォントなど＋幅を定義*/
     color: #333333;
     font-size: 16px;
     line-height: 1.7;
@@ -230,25 +232,25 @@ body{
     width: 490px;
 }
 
-.about-content-body-01 p{
+.about-content-body-01 p{   /*余白を定義*/
     padding-bottom: 30px;
 }
 
-.about-content-body-02{
+.about-content-body-02{  /*テキスト部分のフォントサイズなど＋幅を定義*/
     line-height: 1.7;
     margin-left: 40px;
     margin-top: 20px;
     width: 490px;
 }
 
-.about-content-body-02-title{
+.about-content-body-02-title{   /*RECRUIT部分を作成*/
     font-size: 32px;
     line-height: 1.7;
     color: #109954;
     font-weight: bold;
 }
 
-.about-content-body-02 p{
+.about-content-body-02 p{   /*テキスト部分のフォントサイズなどを定義*/
     color: #333333;
     font-size: 16px;
     line-height: 1.7;
@@ -256,11 +258,11 @@ body{
     margin-top: 20px;
 }
 
-.more-btn{  /*質問関連部分です*/
+.more-btn{  /*ボタンを作成*/
     background-color: #109954;
     width: 166px;
     text-align: center;
-    padding: 15px 39px;
+    padding: 9px 39px;  /*line-heightの分、paadngを調整*/
     display: block;
     border-radius: 32px;
     font-size: 18px;
@@ -269,24 +271,25 @@ body{
     line-height: 1.7;
     box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
 }
-/*「NEWS」部分ここまで*/
+/*「ABOUT」部分ここまで*/
+
 
 
 /*ここから「NEWS」部分*/
-.news-inner{
+.news-inner{    /*innerを定義*/
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     padding: 50px 20px 50px 20px;
 }
 
-.news{
+.news{  /*h2テキストとボーダーを並べる*/
     display: flex;
     justify-content: center;
     padding-bottom: 101px;
 }
 
-.news-ttl{
+.news-ttl{  /*フォントサイズなどを定義*/
     font-size: 36px;
     margin-left: 50px;
     margin-right: 50px;
@@ -294,45 +297,54 @@ body{
     color: #333333;
 }
 
-.news-box-01,.news-box-02,.news-box-03{
+.news-box-01,.news-box-02,.news-box-03{     /*記事（box）の中身をそれぞれ横並びにする*/
     display: flex;
 }
 
-.news-box-01 img,.news-box-02 img,.news-box-03 img{
+.news-box-01 img,.news-box-02 img,.news-box-03 img{     /*画像のサイズを定義*/
     width: 300px;
     height: 168px;
     margin-right: 34px;
 }
 
-.time-category{
-    display: flex;
-}
-
-.news-box-01,.news-box-02,.news-box-03{
+.news-box-01,.news-box-02,.news-box-03{     /*記事同士の余白とボーダーを作成*/
     border-top: solid 1px #707070;
     padding-top: 30px;
     padding-bottom: 30px;
     max-width: 1000px;
 }
 
-.news-box-03{
+.news-box-03{   /*ボーダーを作成*/
     border-bottom: solid 1px #707070;
 }
 
-.time-category time,.article-title,.article-txt{
+.time-category time,.article-title{    /*ブログカード内のテキストのサイズなどを定義*/
     font-size: 16px;
     color: #333333;
     font-weight: bold;
     line-height: 1.5;
 }
 
-.time-category time{
+.article-txt{      /*ブログカード内のテキストのサイズなどを定義*/
+    font-size: 16px;
+    color: #333333;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.time-category{     /*日付と「カテゴリ」を横並びにする*/
+    display: flex;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.time-category time{    /*日付の位置を微調整*/
     padding-top: 2px;
 }
 
-.time-category p{
-    position: relative;
-    left:28px;
+.time-category p{   /*「カテゴリ」部分を作成*/
+    position: absolute;
+    left:150px;
     background-color: #FFFFFF;
     display: block;
     border-radius: 13px;
@@ -346,22 +358,23 @@ body{
     text-align: center;
 }
 
-.news-more-btn{     /*質問関連部分です*/
+.news-more-btn{     /*moreボタンの位置を定義*/
     margin: 0 auto;
     margin-top: 50px;
     text-align: center;
 }
 /*「NEWS」部分ここまで*/
 
-/*「FOOTER」部分ここから*/
 
-.footer{
+
+/*「FOOTER」部分ここから*/
+.footer{    /*高さを設定*/
     background-color:#E8E8E8;
     width: 100%;
     height: 135px;
 }
 
-.footer-inner{
+.footer-inner{  /*inner部分を定義*/
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
@@ -370,54 +383,48 @@ body{
 
 .footer-01 {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center;    /*flexコンテナ内の要素を上下の中心に配置*/
+    justify-content: space-between; /*要素を左右に配置*/
 }
 
-.footer-nav{
+.footer-nav{    /*ロゴと水平になるように微調整*/
     padding-top: 20px;
 }
 
-.footer-logo img{
+.footer-logo img{    /*フッター画像のサイズを定義*/
     width: 70px;
     height: 70px;
 }
 
-.item-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .footer-nav li {
-    display: inline-block;
+    display: inline-block;  /*ブロック要素にして横並びにする*/
 }
 
-.nav-a,.nav-b,.nav-c,.nav-d {
+.nav-a,.nav-b,.nav-c,.nav-d {   /*フォントサイズなどを定義*/
     font-size: 14px;
     font-weight: normal;
     line-height: 1.7;
     color: #333333;
 }
 
-.nav-a,.nav-b,.nav-c{
+.nav-a,.nav-b,.nav-c{   /*ボーダーを作成*/
     border-right: 1px solid #333333;
 }
 
-.nav-a{
+.nav-a{     /*nav同士の間隔を調整*/
     padding-right: 18px;
 }
 
-.nav-b,.nav-c{
+.nav-b,.nav-c{  /*nav同士の間隔を調整*/
     padding-right: 18px;
     padding-left: 18px;
 }
 
-.nav-d{
+.nav-d{     /*nav同士の間隔を調整*/
     padding-left: 18px;
 }
 
-.footer-02 p{
+.footer-02 p{        /*コピーライト部分を作成*/
     font-size: 14px;
     font-weight: normal;
     line-height: 1.7;
@@ -425,3 +432,263 @@ body{
     text-align: center;
     margin-bottom: 14px;
 }
+/*「FOOTER」部分ここまで*/
+
+
+
+/*「レスポンシブ対応」ここから*/
+@media screen and (max-width:639px) {   /*スマホ用のcssを記述*/
+
+/*ここから「ヘッダー部分」*/
+    .header-inner{
+        padding: 11px 20px;    /*ヘッダー部分のpaddingを調整*/
+    }
+    .header-logo img{
+        width: 110px;   /*ヘッダー画像のサイズを調整*/
+    }
+/*「ヘッダー部分」ここまで*/
+
+/*ここから「イメージビジュアル」部分*/
+    .mv-inner{
+        padding:0px 20px 30px 20px;  /*mv部分のpaddingを調整*/
+    }
+    .br-pc {
+        display:none;   /*PC用の改行は機能させない*/
+    }
+    .br-sp {
+        display:block;  /*スマホ用の改行は機能させる*/
+    }
+    .mv-wrapper{
+        flex-direction: column-reverse; /*要素を逆向きで縦並びに*/
+    }
+    .mv-txt-01{ 
+        font-size: 28px;    /*フォントサイズを調整*/
+        padding-bottom: 0;  /*下の余白を削除*/
+        text-align: center; /*テキストを中央に*/
+        padding-top: 10px;  /*画像との距離を調整*/
+    }
+    .mv-txt-02{
+        font-size: 16px;
+        text-align: center;  /*テキストを中央に*/
+    }
+    .mv-btn{    /*縦ならびにして中央に*/
+        display: flex;
+        flex-direction : column;
+        align-items: center;
+    }
+    .contact-btn{
+        margin-right: 0;    /*右の余白を削除*/
+    }
+/*「イメージビジュアル部分」ここまで*/
+
+/*ここから「サービス部分」*/
+    .service-inner{     /*インナー部分の余白を調整*/
+        padding: 70px 20px 50px 20px;
+    }
+    .service-ttl{   /*フォントサイズと左右の余白を調整*/
+        font-size: 28px;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .border-01,.border-02{  /*ボーダーの上下位置を調整*/
+        margin-top: 21px;
+    }
+    .service-contents{  /*要素を縦並びに*/
+        padding-top: 80px;
+        display: flex;
+        flex-direction : column;
+        align-items: center;
+    }
+    .service-content{   /*要素の幅を100%に*/
+        width: 100%;
+    }
+/*「サービス部分」ここまで*/
+
+/*ここから「ABOUT部分」*/
+    .about-inner{
+        padding: 50px 20px 0px 20px;
+    }
+    .about-contents{     /*余白を調整*/
+        padding-top: 50px;
+    }
+    .about-content{     /*余白を調整*/
+        padding-bottom: 70px;
+    }
+    .about-ttl{     /*フォントサイズと左右の余白を調整*/
+        font-size: 28px;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .about-contents .about-content{    /*about部分を縦に1列表示*/
+        display: flex;
+        flex-direction : column;
+        align-items: center;        
+    }
+    .about-content-body-01,.about-content-body-02{  /*横いっぱいに表示*/
+        width: 100%;
+    }
+    .about-content-body-01 p,.about-content-body-02 p{  
+        font-size: 16px;    /*フォントサイズを調節*/
+        padding-bottom: 14px;   /*余白を調整*/
+    }
+    .about-content-body-02 p{
+        padding-right: 0px;
+    }
+    .about-content-body-01{     /*余白を調整*/
+        margin-top: 50px;
+        padding-right: 0px;
+    }
+    .more-btn{     /*ボタンを中央に表示*/
+        margin: 0 auto;
+    }
+    .about-content-body-02{     /*余白を調整*/
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+/*「ABOUT部分」ここまで*/
+
+/*ここから「NEWS部分」*/
+    .news-inner{    /*余白を調整*/
+        padding: 30px 20px 100px 20px;
+    }
+    .news{  /*余白を調整*/
+        padding-bottom: 80px;
+    }
+    .news-ttl{     /*フォントサイズと左右の余白を調整*/
+        font-size: 28px;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .news-box-01,.news-box-02,.news-box-03{     /*記事（box）の中身をそれぞれ縦並びにする*/
+        display: flex;
+        flex-direction : column;
+        align-items: center;
+    }
+    .news-box-01 img, .news-box-02 img, .news-box-03 img{   /*余白を調整*/
+        margin-right: 0px;
+    }
+    .time-category p{   /*absoluteの位置を定義*/
+        left: 120px;
+    }
+    .news-box-01,.news-box-02,.news-box-03{     /*余白を調整*/
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .news-more-btn{     /*余白を調整*/
+        margin-top: 50px;
+    }
+/*「NEWS部分」ここまで*/
+
+/*ここから「FOOTER部分」*/
+    .footer-inner{
+        padding: 30px 20px 20px 20px;
+    }
+    .footer{    /*高さを変更*/
+        height: 289px;
+    }
+    .nav-a, .nav-b, .nav-c{     /*ボーダーを削除*/
+        border-right:none;
+    }
+    .footer-01{     /*navを縦に並べる*/
+        display: flex;
+        flex-direction : column;
+        align-items: center;
+    }
+    .footer-nav li{     /*インラインブロック要素を解除*/
+        display: block;
+    }
+    .nav-a{     /*nav同士の余白を削除*/
+        padding-right: 0px;
+    }
+    .nav-b,.nav-c{  /*nav同士の余白を削除*/
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .nav-d{     /*nav同士の余白を削除*/
+        padding-left: 0px;
+    }
+    .footer-nav{     /*余白を調整*/
+        padding-top: 23px; 
+        text-align: center;
+    }
+
+    .footer-nav ul{
+        padding-inline-start:0px;   /*リストのインデントを削除*/
+    }
+    .footer-nav-ul{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .order1{
+        order: 1;
+    }
+    .order2{
+        order: 2;
+    }
+    .order3{
+        order: 3;
+    }
+    .order4{
+        order: 4;
+    }
+/*「FOOTER部分」ここまで*/
+}
+
+
+
+/*tablet用ここから*/
+@media only screen and (min-width:640px) and (max-width:1023px) {
+    .br-pc {
+        display:block;   /*PC用の改行は機能させる*/
+    }
+    .br-sp {
+        display:none;  /*スマホ用の改行は機能させない*/
+    }
+    .mv-wrapper{
+        flex-direction: column-reverse; /*要素を逆向きで縦並びに*/
+    }
+    .mv-txt-01{ 
+        font-size: 28px;    /*フォントサイズを調整*/
+        padding-bottom: 0;  /*下の余白を削除*/
+        text-align: center; /*テキストを中央に*/
+        padding-top: 10px;  /*画像との距離を調整*/
+    }
+    .mv-txt-02{
+        font-size: 16px;
+        text-align: center;  /*テキストを中央に*/
+    }
+    .mv-btn{    /*縦ならびにして中央に*/
+        display: flex;
+        flex-direction : column;
+        align-items: center;
+    }
+    .contact-btn{
+        margin-right: 0;    /*右の余白を削除*/
+    }
+    .about-contents .about-content:nth-child(odd) {
+        flex-direction: row-reverse;    /*about部分を2列表示*/
+    }
+}
+/*tablet用ここまで*/
+
+
+
+/*PC用ここから*/
+@media screen and (min-width:1024px) {
+    .about-contents .about-content:nth-child(odd) {
+        flex-direction: row-reverse;    /*about部分を2列表示*/
+    }
+    .br-pc {
+        display:block;   /*PC用の改行は機能させる*/
+    }
+    .br-sp {
+        display:none;  /*スマホ用の改行は機能させない*/
+    }
+}
+/*PC用ここまで*/
+
+
+
+
+
