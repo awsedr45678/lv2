@@ -339,7 +339,7 @@ body{
 }
 
 .time-category time{    /*日付の位置を微調整*/
-    padding-top: 2px;
+    padding-top: 3px;
 }
 
 .time-category p{   /*「カテゴリ」部分を作成*/
@@ -686,3 +686,8 @@ body{
     }
 }
 /*PC用ここまで*/
+
+
+
+
+
