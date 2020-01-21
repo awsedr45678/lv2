@@ -353,9 +353,8 @@ body{
     color: #109954;
     line-height: 1.7;
     border: 2px #109954 solid;
-    width: 101px;
-    height: 26px;
     text-align: center;
+    padding: 0px 22px;
 }
 
 .news-more-btn{     /*moreボタンの位置を定義*/
@@ -568,7 +567,7 @@ body{
         margin-right: 0px;
     }
     .time-category p{   /*absoluteの位置を定義*/
-        left: 140px;
+        left: 120px;
     }
     .news-box-01,.news-box-02,.news-box-03{     /*余白を調整*/
         padding-top: 18px;
